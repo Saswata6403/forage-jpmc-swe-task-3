@@ -3,10 +3,12 @@ export interface Order {
   size: number,
 }
 export interface ServerRespond {
+  top_ask_price: number;
   stock: string,
   top_bid: Order,
   top_ask: Order,
   timestamp: Date,
+  ratio: number,
 }
 
 class DataStreamer {
